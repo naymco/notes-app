@@ -1,2 +1,2 @@
 # notes-app
-App for notes create in nodejs, framework express and mongodb. 
+App for notes, i created it myself in nodejs, framework express and mongodb.
