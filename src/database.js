@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb+srv://naymco:D%r3%a%m%w%3av%3r%@@cluster0-vamxx.mongodb.net/test?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://naymc0:Dr3amw3av3r@@cluster0-mjza5.mongodb.net/test?retryWrites=true&w=majority', {
     useCreateIndex: true,
     useNewUrlParser: true,
     useFindAndModify: false
