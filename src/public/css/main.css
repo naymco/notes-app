@@ -7,3 +7,15 @@ body{
 .logo{
     width: 30%;
 }
+.social-links img{
+    width: 40px;
+    height: auto;
+    padding-bottom: 10px;
+    float: right;
+    padding-left: 10px;
+    display: inline-block;
+}
+footer p{
+    float: left;
+    
+}
