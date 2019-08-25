@@ -3,6 +3,7 @@ const path = require('path');
 const exphbs = require('express-handlebars');
 const methodOverride = require('method-override');
 const session = require('express-session');
+const bodyParser = require('body-parser');
 const flash = require('connect-flash');
 const passport = require('passport');
 
@@ -36,6 +37,18 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash());
 
+// Send form into Middlewares.
+app.use(bodyParser.urlencoded({extended: true}));
+app.get('/sendform', (req, res)=>{
+    res.render('sendform', {qs: req.query});
+});
+
+app.post('/sendform', (req, res)=>{
+    console.log(req.body);
+    res.render('sendform', {qs: req.query});
+});
+
+app.use(require('body-parser')());
 
 // Global Variables
 app.use((req, res, next)=>{

@@ -1,23 +1,145 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'run', 'de' ]
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'i',
+1 verbose cli   'express-session',
+1 verbose cli   'methos-override' ]
 2 info using npm@3.5.2
 3 info using node@v8.10.0
-4 verbose stack Error: missing script: de
-4 verbose stack     at run (/usr/share/npm/lib/run-script.js:147:19)
-4 verbose stack     at /usr/share/npm/lib/run-script.js:57:5
-4 verbose stack     at /usr/share/npm/node_modules/read-package-json/read-json.js:345:5
-4 verbose stack     at checkBinReferences_ (/usr/share/npm/node_modules/read-package-json/read-json.js:309:45)
-4 verbose stack     at final (/usr/share/npm/node_modules/read-package-json/read-json.js:343:3)
-4 verbose stack     at then (/usr/share/npm/node_modules/read-package-json/read-json.js:113:5)
-4 verbose stack     at ReadFileContext.<anonymous> (/usr/share/npm/node_modules/read-package-json/read-json.js:284:20)
-4 verbose stack     at ReadFileContext.callback (/usr/share/npm/node_modules/graceful-fs/graceful-fs.js:76:16)
-4 verbose stack     at FSReqWrap.readFileAfterOpen [as oncomplete] (fs.js:420:13)
-5 verbose cwd /home/geekshubs019/Documentos/bootcamp/notes-app
-6 error Linux 5.0.0-25-generic
-7 error argv "/usr/bin/node" "/usr/bin/npm" "run" "de"
-8 error node v8.10.0
-9 error npm  v3.5.2
-10 error missing script: de
-11 error If you need help, you may report this error at:
-11 error     <https://github.com/npm/npm/issues>
-12 verbose exit [ 1, true ]
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData express-session@1.16.2
+8 silly fetchPackageMetaData methos-override
+9 silly fetchNamedPackageData express-session
+10 silly mapToRegistry name express-session
+11 silly mapToRegistry using default registry
+12 silly mapToRegistry registry https://registry.npmjs.org/
+13 silly mapToRegistry uri https://registry.npmjs.org/express-session
+14 silly fetchNamedPackageData methos-override
+15 silly mapToRegistry name methos-override
+16 silly mapToRegistry using default registry
+17 silly mapToRegistry registry https://registry.npmjs.org/
+18 silly mapToRegistry uri https://registry.npmjs.org/methos-override
+19 verbose request uri https://registry.npmjs.org/methos-override
+20 verbose request no auth needed
+21 info attempt registry request try #1 at 12:01:01
+22 verbose request id 85a96714e315db2e
+23 http request GET https://registry.npmjs.org/methos-override
+24 verbose request uri https://registry.npmjs.org/express-session
+25 verbose request no auth needed
+26 info attempt registry request try #1 at 12:01:01
+27 verbose etag W/"6e03d1783eeb2bc5fc3172c0f4ab2d7c"
+28 verbose lastModified Wed, 19 Jun 2019 19:46:37 GMT
+29 http request GET https://registry.npmjs.org/express-session
+30 http 304 https://registry.npmjs.org/express-session
+31 verbose headers { date: 'Sun, 25 Aug 2019 10:01:01 GMT',
+31 verbose headers   connection: 'keep-alive',
+31 verbose headers   'set-cookie':
+31 verbose headers    [ '__cfduid=d5123d5420295c0e682035ed1483ab0a41566727261; expires=Mon, 24-Aug-20 10:01:01 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+31 verbose headers   'cf-cache-status': 'HIT',
+31 verbose headers   'cache-control': 'max-age=300',
+31 verbose headers   'cf-ray': '50bcb8e8390ed665-MAD',
+31 verbose headers   age: '532',
+31 verbose headers   etag: '"6e03d1783eeb2bc5fc3172c0f4ab2d7c"',
+31 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+31 verbose headers   'last-modified': 'Wed, 19 Jun 2019 19:46:37 GMT',
+31 verbose headers   vary: 'accept-encoding, accept',
+31 verbose headers   'x-amz-meta-rev': '525-0ec60b8a9fcf896ade55849209e51e96',
+31 verbose headers   server: 'cloudflare' }
+32 silly get cb [ 304,
+32 silly get   { date: 'Sun, 25 Aug 2019 10:01:01 GMT',
+32 silly get     connection: 'keep-alive',
+32 silly get     'set-cookie':
+32 silly get      [ '__cfduid=d5123d5420295c0e682035ed1483ab0a41566727261; expires=Mon, 24-Aug-20 10:01:01 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+32 silly get     'cf-cache-status': 'HIT',
+32 silly get     'cache-control': 'max-age=300',
+32 silly get     'cf-ray': '50bcb8e8390ed665-MAD',
+32 silly get     age: '532',
+32 silly get     etag: '"6e03d1783eeb2bc5fc3172c0f4ab2d7c"',
+32 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+32 silly get     'last-modified': 'Wed, 19 Jun 2019 19:46:37 GMT',
+32 silly get     vary: 'accept-encoding, accept',
+32 silly get     'x-amz-meta-rev': '525-0ec60b8a9fcf896ade55849209e51e96',
+32 silly get     server: 'cloudflare' } ]
+33 verbose etag https://registry.npmjs.org/express-session from cache
+34 verbose get saving express-session to /home/geekshubs019/.npm/registry.npmjs.org/express-session/.cache.json
+35 http 404 https://registry.npmjs.org/methos-override
+36 verbose headers { date: 'Sun, 25 Aug 2019 10:01:02 GMT',
+36 verbose headers   'content-type': 'application/json',
+36 verbose headers   'content-length': '21',
+36 verbose headers   connection: 'keep-alive',
+36 verbose headers   'set-cookie':
+36 verbose headers    [ '__cfduid=d727d8b6e31f0c9c49ec973389ce115d11566727261; expires=Mon, 24-Aug-20 10:01:01 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+36 verbose headers   'cf-cache-status': 'MISS',
+36 verbose headers   'cache-control': 'max-age=300',
+36 verbose headers   'cf-ray': '50bcb8e83944d679-MAD',
+36 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+36 verbose headers   vary: 'accept-encoding, accept',
+36 verbose headers   server: 'cloudflare' }
+37 silly get cb [ 404,
+37 silly get   { date: 'Sun, 25 Aug 2019 10:01:02 GMT',
+37 silly get     'content-type': 'application/json',
+37 silly get     'content-length': '21',
+37 silly get     connection: 'keep-alive',
+37 silly get     'set-cookie':
+37 silly get      [ '__cfduid=d727d8b6e31f0c9c49ec973389ce115d11566727261; expires=Mon, 24-Aug-20 10:01:01 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+37 silly get     'cf-cache-status': 'MISS',
+37 silly get     'cache-control': 'max-age=300',
+37 silly get     'cf-ray': '50bcb8e83944d679-MAD',
+37 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+37 silly get     vary: 'accept-encoding, accept',
+37 silly get     server: 'cloudflare' } ]
+38 silly fetchPackageMetaData Error: Not found : methos-override
+38 silly fetchPackageMetaData     at makeError (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+38 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+38 silly fetchPackageMetaData     at Request._callback (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+38 silly fetchPackageMetaData     at Request.self.callback (/usr/share/npm/node_modules/request/request.js:198:22)
+38 silly fetchPackageMetaData     at emitTwo (events.js:126:13)
+38 silly fetchPackageMetaData     at Request.emit (events.js:214:7)
+38 silly fetchPackageMetaData     at Request.<anonymous> (/usr/share/npm/node_modules/request/request.js:1082:10)
+38 silly fetchPackageMetaData     at emitOne (events.js:121:20)
+38 silly fetchPackageMetaData     at Request.emit (events.js:211:7)
+38 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/usr/share/npm/node_modules/request/request.js:1009:12)
+38 silly fetchPackageMetaData  error for methos-override { Error: Not found : methos-override
+38 silly fetchPackageMetaData     at makeError (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+38 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+38 silly fetchPackageMetaData     at Request._callback (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+38 silly fetchPackageMetaData     at Request.self.callback (/usr/share/npm/node_modules/request/request.js:198:22)
+38 silly fetchPackageMetaData     at emitTwo (events.js:126:13)
+38 silly fetchPackageMetaData     at Request.emit (events.js:214:7)
+38 silly fetchPackageMetaData     at Request.<anonymous> (/usr/share/npm/node_modules/request/request.js:1082:10)
+38 silly fetchPackageMetaData     at emitOne (events.js:121:20)
+38 silly fetchPackageMetaData     at Request.emit (events.js:211:7)
+38 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/usr/share/npm/node_modules/request/request.js:1009:12) pkgid: 'methos-override', statusCode: 404, code: 'E404' }
+39 silly rollbackFailedOptional Starting
+40 silly rollbackFailedOptional Finishing
+41 silly runTopLevelLifecycles Starting
+42 silly runTopLevelLifecycles Finishing
+43 silly install printInstalled
+44 verbose stack Error: Not found : methos-override
+44 verbose stack     at makeError (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+44 verbose stack     at CachingRegistryClient.<anonymous> (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+44 verbose stack     at Request._callback (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+44 verbose stack     at Request.self.callback (/usr/share/npm/node_modules/request/request.js:198:22)
+44 verbose stack     at emitTwo (events.js:126:13)
+44 verbose stack     at Request.emit (events.js:214:7)
+44 verbose stack     at Request.<anonymous> (/usr/share/npm/node_modules/request/request.js:1082:10)
+44 verbose stack     at emitOne (events.js:121:20)
+44 verbose stack     at Request.emit (events.js:211:7)
+44 verbose stack     at IncomingMessage.<anonymous> (/usr/share/npm/node_modules/request/request.js:1009:12)
+45 verbose statusCode 404
+46 verbose pkgid methos-override
+47 verbose cwd /home/geekshubs019/Documentos/bootcamp/notes-app
+48 error Linux 5.0.0-25-generic
+49 error argv "/usr/bin/node" "/usr/bin/npm" "i" "express-session" "methos-override"
+50 error node v8.10.0
+51 error npm  v3.5.2
+52 error code E404
+53 error 404 Not found : methos-override
+54 error 404
+55 error 404 'methos-override' is not in the npm registry.
+56 error 404 You should bug the author to publish it (or use the name yourself!)
+57 error 404 Note that you can also install from a
+58 error 404 tarball, folder, http url, or git url.
+59 verbose exit [ 1, true ]

@@ -13,4 +13,8 @@ router.get('/contact', (req, res) => {
     res.render('contact');
 });
 
+router.get('/sendform', (req, res) => {
+    res.render('sendform');
+})
+
 module.exports = router;
